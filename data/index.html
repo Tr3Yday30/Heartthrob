@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich or Die</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h2>Income vs Death rate</h2>
+            <p>Welcome!</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+              <div id="info">
+                <select id="selCity" onchange="optionChanged(this.value)">
+                  <option value="40252">Alabama</option>
+                  <option value="57278">Alaska</option>
+                  <option value="43401">Arizona</option>
+                  <option value="42056">Arkansas</option>
+                  <option value="58813">California</option>
+                  <option value="55294">Colarado</option>
+                  <option value="70163">Connecticut</option>
+                  <option value="50516">Delaware</option>
+                  <option value="79967">District of Columbia</option>
+                  <option value="49020">Florida</option>
+                  <option value="44996">Georgia</option>
+                  <option value="51055">Hawaii</option>
+                  <option value="41560">Idaho</option>
+                  <option value="53645">Illinois</option>
+                  <option value="45116">Indiana</option>
+                  <option value="47286">Iowa</option>
+                  <option value="48756">Kansas</option>
+                  <option value="40770">Kentucky</option>
+                  <option value="44074">Louisiana</option>
+                  <option value="46421">Maine</option>
+                  <option value="59183">Maryland</option>
+                  <option value="66625">Massachusetts</option>
+                  <option value="45648">Michigan</option>
+                  <option value="54317">Minnesota</option>
+                  <option value="36907">Mississippi</option>
+                  <option value="45376">Missouri</option>
+                  <option value="46101">Montana</option>
+                  <option value="50204">Nebraska</option>
+                  <option value="47542">Nevada</option>
+                  <option value="58419">New Hampshire</option>
+                  <option value="62397">New Jersey</option>
+                  <option value="39437">New Mexico</option>
+                  <option value="63045">New York</option>
+                  <option value="44529">North Carolina</option>
+                  <option value="52455">North Dakota</option>
+                  <option value="46711">Ohio</option>
+                  <option value="44444">Oklahoma</option>
+                  <option value="47983">Oregon</option>
+                  <option value="52499">Pennsylvania</option>
+                  <option value="50973">Rhode Island</option>
+                  <option value="42819">South Carolina</option>
+                  <option value="50350">South Dakota</option>
+                  <option value="44969">Tennessee</option>
+                  <option value="49227">Texas</option>
+                  <option value="43400">Utah</option>
+                  <option value="50709">Vermont</option>
+                  <option value="54976">Virgina</option>
+                  <option value="57244">Washington</option>
+                  <option value="39169">West Virginia</option>
+                  <option value="48741">Wisconsin</option>
+                  <option value="57126">Wyoming</option>
+                </select>
+              </div>
+              <div id="cityInfo"></div>
+            </div>
+            <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+            <script src="https://d3js.org/d3.v5.min.js"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+            <script src="./static/js/app.js"></script>
+            <script src="./static/js/logic.js"></script>
+</body>
+</html>
