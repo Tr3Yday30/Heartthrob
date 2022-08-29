@@ -4,22 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rich or Die</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Machine Learning Project</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12 jumbotron text-center">
-            <h2>Income vs Death rate</h2>
-            <p>Welcome!</p>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" style="background-color: rgb(255,255,255);" href="index.html">Machine Learning</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        VISUALIZATIONS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="WebVisualizations/tableau.html">Tableau</a>
+                        <a class="dropdown-item" href="WebVisualizations/machine-learning.html">Machine Learning</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="WebVisualizations/data.html">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Prakb2401/Heartthrob">GITHUB</a>
+                </li>
+            </ul>
+        </div>
           </div>
         </div>
+      <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-ls-7 col-md-12">
+              <h3 class = "title">Machine Learning Project</h3>
+              <p>
+                For our project we found the correlation between having a bachelor's degree and income.
+              </p>
               <div id="info">
-                <select id="selCity" onchange="optionChanged(this.value)">
+                <select id="selState" onchange="optionChanged(this.value)">
                   <option value="40252">Alabama</option>
                   <option value="57278">Alaska</option>
                   <option value="43401">Arizona</option>
@@ -75,6 +102,7 @@
               </div>
               <div id="cityInfo"></div>
             </div>
+          </div>
             <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
@@ -82,6 +110,5 @@
             <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
             <script src="./static/js/app.js"></script>
-            <script src="./static/js/logic.js"></script>
 </body>
 </html>
