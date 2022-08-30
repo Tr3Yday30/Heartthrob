@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
+    <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script>
+    <title>Machine Learning Project</title>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" style="background-color: rgb(255,255,255);" href="index.html">Machine Learning</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        VISUALIZATIONS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="visualization.html">Visualizations</a>
+                        <a class="dropdown-item" href="machine_learning.html">Machine Learning</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Prakb2401/Heartthrob">GITHUB</a>
+                </li>
+            </ul>
+        </div>
+          </div>
+        </div>
+        <script type="text/javascript"
+        src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        var tabList = ["https://public.tableau.com/views/Dataframe/Sheet5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"];
+    
+        var tableau1,
+            list_length = tabList.length,
+            vizCount = 0;
+    
+        function createViz(vizPlusMinus) {
+            var vizDiv = document.getElementById("vizContainer"),
+                options = {
+                    hideTabs: true
+                };
+    
+            vizCount = vizCount + vizPlusMinus;
+    
+            if (vizCount >= list_length) {
+            // Keep the vizCount in the bounds of the array index.
+                vizCount = 0;
+            } else if (vizCount < 0) {
+                vizCount = list_length - 1;
+            }
+    
+            if (tableau1) { // If a viz object exists, delete it.
+                tableau1.dispose();
+            }
+    
+            var vizURL = tabList[vizCount];
+            tableau1 = new tableau.Viz(vizDiv, vizURL, options);
+        }
+    </script>
+    
+    <div id="vizContainer" class="m-auto mt-4" style="width:1300px; height:700px;"></div>
+    <div id="controls" style="padding-bottom: 50px;">
+        <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
+        <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
+    </div>
+    
+    
+    </body>
+</html>
