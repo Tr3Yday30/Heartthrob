@@ -68,7 +68,7 @@
                 <br>
                 <li>For our third observation, we noticed that the states with lowest average income and percentage of bachelor degrees were states in the mid west part of the country. This includes states like West Virginia, Ohio, Oklahoma, and Mississippi. We believe this is because in these states there is bigger focus on farming which is one of the main professions in these states.</li>
                 <br>
-                <li>For our fourth observation, the only states that reduced their average income over the 5 year period were Alaska, Nebraska, North Dakota, Oklahome, and Wyoming.</li>
+                <li>For our fourth observation, the only states that reduced their average income over the 5 year period were Alaska, Nebraska, North Dakota, Oklahoma, and Wyoming.</li>
                 </ol>
               </p>
               </div>
@@ -85,7 +85,7 @@
 
     var tableau1,
         list_length = tabList.length,
-        vizCount = 0;
+        Counter = 0;
 
     function createViz(vizPlusMinus) {
         var vizDiv = document.getElementById("vizContainer"),
@@ -93,21 +93,21 @@
                 hideTabs: true
             };
 
-        vizCount = vizCount + vizPlusMinus;
+        Counter = Counter + vizPlusMinus;
 
-        if (vizCount >= list_length) {
-        // Keep the vizCount in the bounds of the array index.
-            vizCount = 0;
-        } else if (vizCount < 0) {
-            vizCount = list_length - 1;
+        if (Counter >= list_length) {
+        
+            Counter = 0;
+        } else if (Counter < 0) {
+            Counter = list_length - 1;
         }
 
-        if (tableau1) { // If a viz object exists, delete it.
+        if (tableau1) { 
             tableau1.dispose();
         }
 
-        var vizURL = tabList[vizCount];
-        tableau1 = new tableau.Viz(vizDiv, vizURL, options);
+        var URL = tabList[Counter];
+        tableau1 = new tableau.Viz(vizDiv, URL, options);
     }
 </script>
 
