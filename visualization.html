@@ -42,6 +42,39 @@
           </div>
      </div>
     <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-ls-7 col-md-12">
+              <h3 style="font-weight:bold" class = "title">Tableau Analysis</h3>
+              <p>
+                On this page we created a few visualizations of our data using Tableau.<br>
+                <ol>
+                <li>For our first visualization we have a map of the country and it shows average income and percentage of bachelors by state per year. We also added a filter so you can change which year you want to see and the color of the state changes accordingly.</li>
+                <br>
+                <li>For our second visualization we have average income per year per state.</li>
+                <br>
+                <li>For our third visualization we have percentage of bachelor graduates by year per state.</li>
+                <br>
+                <li>For our fourth visualization we show trends in average income per year and we a filter for state and year.</li>
+                </ol>
+              </p>
+              <h3 style="font-weight:bold">Observations</h3>
+              <p>
+                We found several observations based on our data.<br>
+                <ol>
+                <li>For our first observation, average income rose for most states during the 5 year sample. We belive this is an affect of the economy coming back to normal following the 2008 recession.</li>
+                <br>
+                <li>For our second observation, compared to most states the District of Columbia or Wahsington D.C always had the highest average income every year and the highest percentage of bachelor degrees. We believe that this is caused by many politicians living their.</li>
+                <br>
+                <li>For our third observation, we noticed that the states with lowest average income and percentage of bachelor degrees were states in the mid west part of the country. This includes states like West Virginia, Ohio, Oklahoma, and Mississippi. We believe this is because in these states there is bigger focus on farming which is one of the main professions in these states.</li>
+                <br>
+                <li>For our fourth observation, the only states that reduced their average income over the 5 year period were Alaska, Nebraska, North Dakota, Oklahome, and Wyoming.</li>
+                </ol>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
     <script type="text/javascript"
     src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 <script type="text/javascript">
@@ -78,7 +111,7 @@
     }
 </script>
 
-<div id="vizContainer" class="m-auto mt-4" style="width:1300px; height:700px;"></div>
+<div id="vizContainer" class="m-auto mt-4" style="width: 100%; margin: 0 auto;"></div>
 <div id="controls" style="padding-bottom: 50px;">
     <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
     <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>

@@ -14,7 +14,13 @@ body {
     background-color:rgb(201, 146, 146);
     font-family: cochin;
   }
-  
+  .vizContainer {
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+
+  }
   img {
     width:50%;
     height:50%;
@@ -55,6 +61,28 @@ body {
   .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
     background-color: rgba(0, 0, 0, 0.75);
   }
+  ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+  }
+  
+  ol > li {
+    margin: 0;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+  }
+  
+  ol > li:before {
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+  }
   
   .nav-link:hover {
     background-color:rgba(0, 0, 0, 0.75);
@@ -72,6 +100,12 @@ body {
     position: absolute;
     left: auto;
     right: 0;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
   .navbarSupportedContent {
     position: absolute;

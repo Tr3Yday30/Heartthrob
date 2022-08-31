@@ -44,90 +44,35 @@
       <div class="container">
         <div class="row">
             <div class="col-ls-7 col-md-12">
-              <h3 style="font-weight:bold" class = "title">Machine Learning Project</h3>
+              <h3 style="font-weight:bold" class = "title">Bachelor's Degree vs Income Machine Learning</h3>
               <p>
-                For our project we found the correlation between having a bachelor's degree and income.
-                <br>
-                The variables we tested include 
+                For our project we found the correlation between having a bachelor's degree and income. We collected data from the Bureau of Economic Analysis and the Nationa Center for Science and Engineering Statistics websites, both of our sources can be found below. With this data we began by cleaning with Pandas and then conducted Machine Learning and made some data visualizations with Tableau.
+                The variables we tested include the percentage of bachelor degrees by state per year, the percentage of Post-Secondary degree by state per year, and the average income by state per year.
+                Please click on either machine learning or tableau analysis below to see our results and observations. 
               </p>
-              <div id="info">
-                <select id="selState" onchange="optionChanged(this.value)">
-                  <option value="40252">Alabama</option>
-                  <option value="57278">Alaska</option>
-                  <option value="43401">Arizona</option>
-                  <option value="42056">Arkansas</option>
-                  <option value="58813">California</option>
-                  <option value="55294">Colarado</option>
-                  <option value="70163">Connecticut</option>
-                  <option value="50516">Delaware</option>
-                  <option value="79967">District of Columbia</option>
-                  <option value="49020">Florida</option>
-                  <option value="44996">Georgia</option>
-                  <option value="51055">Hawaii</option>
-                  <option value="41560">Idaho</option>
-                  <option value="53645">Illinois</option>
-                  <option value="45116">Indiana</option>
-                  <option value="47286">Iowa</option>
-                  <option value="48756">Kansas</option>
-                  <option value="40770">Kentucky</option>
-                  <option value="44074">Louisiana</option>
-                  <option value="46421">Maine</option>
-                  <option value="59183">Maryland</option>
-                  <option value="66625">Massachusetts</option>
-                  <option value="45648">Michigan</option>
-                  <option value="54317">Minnesota</option>
-                  <option value="36907">Mississippi</option>
-                  <option value="45376">Missouri</option>
-                  <option value="46101">Montana</option>
-                  <option value="50204">Nebraska</option>
-                  <option value="47542">Nevada</option>
-                  <option value="58419">New Hampshire</option>
-                  <option value="62397">New Jersey</option>
-                  <option value="39437">New Mexico</option>
-                  <option value="63045">New York</option>
-                  <option value="44529">North Carolina</option>
-                  <option value="52455">North Dakota</option>
-                  <option value="46711">Ohio</option>
-                  <option value="44444">Oklahoma</option>
-                  <option value="47983">Oregon</option>
-                  <option value="52499">Pennsylvania</option>
-                  <option value="50973">Rhode Island</option>
-                  <option value="42819">South Carolina</option>
-                  <option value="50350">South Dakota</option>
-                  <option value="44969">Tennessee</option>
-                  <option value="49227">Texas</option>
-                  <option value="43400">Utah</option>
-                  <option value="50709">Vermont</option>
-                  <option value="54976">Virgina</option>
-                  <option value="57244">Washington</option>
-                  <option value="39169">West Virginia</option>
-                  <option value="48741">Wisconsin</option>
-                  <option value="57126">Wyoming</option>
-                </select>
               <h3 style="font-weight:bold">Sources</h3>
               <a style="font-weight:bold" href="https://apps.bea.gov/iTable/iTable.cfm?reqid=70">Visit Income Data Source!</a><br>
-              <a style="font-weight:bold" href="https://ncses.nsf.gov/indicators/states/indicator/bachelors-degree-holders-per-25-44-year-olds">Visit Bachelor's Degree Data Source!</a>
+              <a style="font-weight:bold" href="https://ncses.nsf.gov/indicators/states/indicator/bachelors-degree-holders-per-25-44-year-olds">Visit Bachelor's Degree and Post-Secondary Degree Data Source!</a>
               </div>
-              <div id="cityInfo"></div>
             </div>
           </div>
         </div>
         <div class="col-lg-5 col-mt-12"></div>
          <div class="box">
           <div class="container">
-            <h3 style="font-weight:bold" class="title">VISUALIZATIONS</h3>
+            <h3 style="font-weight:bold; text-align: center;" class="title">VISUALIZATIONS</h3>
             <hr>
                   <div class="row" style="padding-bottom: 70px;">
                       <div class="col-6">
-                          <div class="title">TABLEAU ANALYSIS</div>
+                          <div style="font-weight:bold; text-align: center;" class="title">TABLEAU ANALYSIS</div>
                           <a href="visualization.html">
-                          <img class="panel" src="static\images\tableau.png" alt="Tableau Notebook">
+                          <img class="center" src="static\images\tableau.png" alt="Tableau Notebook">
                           </a>
                       </div>
                       <div class="col-6">
-                          <div class="title">MACHINE LEARNING</div>
+                          <div style="font-weight:bold; text-align: center;" class="title">MACHINE LEARNING</div>
                           <a href="machine_learning.html">
-                          <img class="panel" src="static\images\IncomevsBachelors.png" alt="Machine Learning Visualization">
+                          <img class="center" src="static\images\IncomevsBachelors.png" alt="Machine Learning Visualization">
                           </a>
                       </div>
                   </div>
