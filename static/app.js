@@ -1,4 +1,4 @@
-d3.select("#selState")
-    .enter()
-optionChanged(d3.select("#selState"));
+$(document).ready( function () {
+    $('#table_id').DataTable();
+} );
 
