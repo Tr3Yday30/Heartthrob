@@ -44,7 +44,8 @@
         <script type="text/javascript"
         src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script type="text/javascript">
-        var tabList = ["https://public.tableau.com/views/Dataframe/Sheet5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"];
+        var tabList = ["https://public.tableau.com/views/Dataframe/Sheet5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+                    "https://public.tableau.com/views/postsecondarydata/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"];
     
         var tableau1,
             list_length = tabList.length,
@@ -59,13 +60,13 @@
             vizCount = vizCount + vizPlusMinus;
     
             if (vizCount >= list_length) {
-            // Keep the vizCount in the bounds of the array index.
+            
                 vizCount = 0;
             } else if (vizCount < 0) {
                 vizCount = list_length - 1;
             }
     
-            if (tableau1) { // If a viz object exists, delete it.
+            if (tableau1) {
                 tableau1.dispose();
             }
     
