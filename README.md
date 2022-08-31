@@ -1,18 +1,18 @@
 # Education for income
 
-## Background and Goal:
+### Background and Goal:
 The relationship between income and Education level is well established but remains sometimes poorly understood
 Our goal on this project is to Use Machine Learning and analyze the relationship between income per Capita on the number of  Bachelors percentage and postsecondary degree holding by State in the US
 
-## Variables for Exploration: 
+### Variables for Exploration: 
 Per Capita Income (by State), Bachelor's degree Percentage and post secondary percentage (by State)
 
-## Period: 2012-2017
+### Period: 2012-2017
 
-## Tools Used:
+### Tools Used:
 Pandas, Matplotlib, Tableau, Scikit-Learn, HTML, CSS, Bootstrap
 
-## Machine Learning Trends:
+### Machine Learning Trends:
 
 Pandas, get_dummies, and feature engineering was utilized to get a better fit model due to our dataset size. States and years were transformed into categorical data. Testing and training data was preprocessed through scaling to normalize the data within a smaller range
 
@@ -26,7 +26,7 @@ The R2 of .80 indicates that the model explains about 80% of the variability of 
 
 Tableau:
 
-# Sources: 
+### Sources: 
 
 https://apps.bea.gov/iTable/iTable.cfm?reqid=70 
 
