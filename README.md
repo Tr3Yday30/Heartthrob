@@ -24,6 +24,7 @@ We ran our analysis to get our residual plot. Prior to that, we decided to run l
 ![IncomevsBachelors](https://user-images.githubusercontent.com/100292828/187719306-83a33e31-6f54-4b15-a332-20ac0ba660ba.png)
 
 The R2 of .80 indicates that the model explains about 80% of the variability of the data around the mean. The mean scored error, which shows the averaged squared difference between the predicted and actual values was .09, close to the desired 0 range. 
+
 <img width="302" alt="last s" src="https://user-images.githubusercontent.com/100292828/187720027-e078254f-a8f2-4d47-829e-fd2d26179c66.png">
 
 Tableau:
