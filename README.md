@@ -21,5 +21,18 @@ Pandas, get_dummies, and feature engineering was utilized to get a better fit mo
 We ran our analysis to get our residual plot. Prior to that, we decided to run linear regressions to see the correlation between income, bachelor’s degree and post-secondary degree. Actual and predicted data was plotted on the same scatterplot.
 ![Incomevpostsecondary](https://user-images.githubusercontent.com/100292828/187719051-4c6401c7-ef38-469c-9136-0facc462850e.png) ![IncomevsBachelors](https://user-images.githubusercontent.com/100292828/187719306-83a33e31-6f54-4b15-a332-20ac0ba660ba.png)
 
+The R2 of .80 indicates that the model explains about 80% of the variability of the data around the mean. The mean scored error, which shows the averaged squared difference between the predicted and actual values was .09, close to the desired 0 range. 
+<img width="302" alt="last s" src="https://user-images.githubusercontent.com/100292828/187720027-e078254f-a8f2-4d47-829e-fd2d26179c66.png">
+
+Tableau:
+
+# Sources: 
+
+https://apps.bea.gov/iTable/iTable.cfm?reqid=70 
+https://ncses.nsf.gov/indicators/states/indicator/bachelors-degree-holders-per-25-44-year-olds 
+
+
+
+
 
 
