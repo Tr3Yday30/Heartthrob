@@ -19,6 +19,7 @@ Pandas, get_dummies, and feature engineering was utilized to get a better fit mo
 <img width="728" alt="table get" src="https://user-images.githubusercontent.com/100292828/187718726-ebd4a5d4-d0d8-4422-b042-44b0adf9faaf.png">
 
 We ran our analysis to get our residual plot. Prior to that, we decided to run linear regressions to see the correlation between income, bachelor’s degree and post-secondary degree. Actual and predicted data was plotted on the same scatterplot.
+
 ![Incomevpostsecondary](https://user-images.githubusercontent.com/100292828/187719051-4c6401c7-ef38-469c-9136-0facc462850e.png)
 ![IncomevsBachelors](https://user-images.githubusercontent.com/100292828/187719306-83a33e31-6f54-4b15-a332-20ac0ba660ba.png)
 
