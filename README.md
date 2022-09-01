@@ -27,7 +27,8 @@ The R2 of .80 indicates that the model explains about 80% of the variability of 
 
 <img width="302" alt="last s" src="https://user-images.githubusercontent.com/100292828/187720027-e078254f-a8f2-4d47-829e-fd2d26179c66.png">
 
-Tableau:
+Tableau:<img width="521" alt="image" src="https://user-images.githubusercontent.com/97966485/187809953-c0431daf-a81e-46da-b61e-47b0033a1081.png">
+
 
 ### Sources: 
 
