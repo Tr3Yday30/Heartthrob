@@ -47,40 +47,40 @@
         var tabList = ["https://public.tableau.com/views/Dataframe/Sheet5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
                     "https://public.tableau.com/views/postsecondarydata/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"];
     
-        var tableau1,
-            list_length = tabList.length,
-            vizCount = 0;
-    
-        function createViz(vizPlusMinus) {
-            var vizDiv = document.getElementById("vizContainer"),
-                options = {
-                    hideTabs: true
-                };
-    
-            vizCount = vizCount + vizPlusMinus;
-    
-            if (vizCount >= list_length) {
-            
-                vizCount = 0;
-            } else if (vizCount < 0) {
-                vizCount = list_length - 1;
-            }
-    
-            if (tableau1) {
-                tableau1.dispose();
-            }
-    
-            var vizURL = tabList[vizCount];
-            tableau1 = new tableau.Viz(vizDiv, vizURL, options);
+                    var tableau1,
+        list_length = tabList.length,
+        Counter = 0;
+
+    function createViz(vizPlusMinus) {
+        var vizDiv = document.getElementById("vizContainer"),
+            options = {
+                hideTabs: true
+            };
+
+        Counter = Counter + vizPlusMinus;
+
+        if (Counter >= list_length) {
+        
+            Counter = 0;
+        } else if (Counter < 0) {
+            Counter = list_length - 1;
         }
-    </script>
-    
-    <div id="vizContainer" class="m-auto mt-4" style="width: 100%; margin: 0 auto;"></div>
-    <div id="controls" style="padding-bottom: 50px;">
-        <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
-        <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
-    </div>
-    
-    
-    </body>
+
+        if (tableau1) { 
+            tableau1.dispose();
+        }
+
+        var URL = tabList[Counter];
+        tableau1 = new tableau.Viz(vizDiv, URL, options);
+    }
+</script>
+
+<div id="vizContainer" class="m-auto mt-4" style="width: 100%; margin: 0 auto;"></div>
+<div id="controls" style="padding-bottom: 50px;">
+    <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
+    <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
+</div>
+
+
+</body>
 </html>
